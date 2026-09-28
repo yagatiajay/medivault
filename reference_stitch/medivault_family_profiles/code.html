@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-variant":"#d3e4fe","on-surface-variant":"#3d4947","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","tertiary":"#545c72","on-secondary-container":"#00476e","background":"#f8f9ff","primary":"#00685f","surface-container-high":"#dce9ff","primary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eaf1ff","outline-variant":"#bcc9c6","error":"#ba1a1a","inverse-surface":"#213145","outline":"#6d7a77","tertiary-container":"#6c748b","on-primary":"#ffffff","on-tertiary-container":"#fefcff","surface-tint":"#006a61","surface-container-highest":"#d3e4fe","on-primary-fixed":"#00201d","on-secondary":"#ffffff","surface-bright":"#f8f9ff","inverse-primary":"#6bd8cb","tertiary-fixed":"#dae2fd","on-tertiary-fixed-variant":"#3f465c","surface-container-lowest":"#ffffff","primary-container":"#008378","primary-fixed":"#89f5e7","secondary-fixed-dim":"#93ccff","surface":"#f8f9ff","on-background":"#0b1c30","on-surface":"#0b1c30","on-primary-fixed-variant":"#005049","error-container":"#ffdad6","on-error":"#ffffff","on-secondary-fixed":"#001d31","secondary":"#006398","surface-container":"#e5eeff","on-tertiary-fixed":"#131b2e","secondary-fixed":"#cce5ff","on-secondary-fixed-variant":"#004b73","on-primary-container":"#f4fffc","tertiary-fixed-dim":"#bec6e0","secondary-container":"#5bb8fe","on-error-container":"#93000a"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem",margin:"1rem","margin-md":"2rem",gutter:"1rem","gutter-md":"1.5rem","space-sm":"0.5rem","space-xl":"2rem","space-xs":"0.25rem","margin-lg":"3rem","space-md":"1rem","gutter-lg":"2rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"500"}],"display-lg":["40px",{lineHeight:"48px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-lg-mobile":["32px",{lineHeight:"40px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"500"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg flex items-center gap-space-sm"><img alt="MediVault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XhBr1t0wrgYNJLGGvQ1HmpDDcZHzFaMJc7F9NThLqMcko3CaHPY2s_TMOLHVeWiODGs32ZVd4OcYeN2LFRDYYXmm6_HGQLbZlorfgkmLAPfXQ8xjrDeKjCjnD7IK8kIFhOappXLRJeA9sRlPAhe3fFaTZhJsOn2JKlHNo7Okfn8IuzzJdzpFKex1kaCcEZOhft-uCatdp4sQS_HkdHqnZyLt2y0pQT8Lh2YB6KruMdgA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MediVault</span><span class="font-label-sm text-label-sm text-on-surface-variant">Personal Health Organizer</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Health Overview</span></div><nav class="flex flex-col gap-space-xs px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="medications" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-md text-body-md">Medications</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="schedule" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-body-md text-body-md">Schedule</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prescriptions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Prescriptions</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reminders" href="#"><span class="material-symbols-outlined text-[20px]">alarm</span><span class="font-body-md text-body-md">Reminders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="family-profiles" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Family Profiles</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/><div class="flex flex-col truncate"><span class="font-label-lg text-label-lg text-on-surface truncate">Sarah Jenkins</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">sarah.j@example.com</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="text-on-surface-variant hover:text-primary transition-colors p-space-xs rounded" title="Quick Settings" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button><button class="text-on-surface-variant hover:text-error transition-colors p-space-xs rounded" title="Sign Out" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div><div class="px-space-xs py-space-xs text-center"><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight opacity-75">MediVault does not provide medical advice. Personal records organizer only.</p></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md max-w-md w-full"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search medications, doctors, logs..." type="search"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant shadow-sm border border-outline-variant/30">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-[18px] text-primary">account_circle</span><span class="font-label-sm text-label-sm text-on-surface-variant">Viewing records for:</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Jenkins (Me)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-sm"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Notifications" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Help and Documentation" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg md:p-space-xl lg:p-margin-md max-w-7xl mx-auto w-full flex flex-col gap-space-lg">
+<!-- Section Header with Asymmetric Accent Layout -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">shield_with_heart</span>
+<span>Care Circle Hub</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Family Profiles</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Organize prescriptions, dosage schedules, and health records for yourself and your loved ones in one secure place.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-[0.98]" id="open-add-modal-btn">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>+ Add Family Member</span>
+</button>
+</div>
+</div>
+<!-- Active Viewing Profile Notice Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-sm">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">sync_saved_locally</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Active Vault</span>
+<span class="text-on-surface-variant text-[10px]">•</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sarah Jenkins (Primary Account - Self)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              Currently viewing records for Sarah. Switch profiles below to view and log another family member's medication records.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end sm:self-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Sync Active
+          </span>
+</div>
+</div>
+</div>
+<!-- Profile Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md items-stretch">
+<!-- Profile 1: Primary (Active) -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<!-- Top Row: Avatar & Status Badge -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="relative">
+<img alt="Sarah Jenkins portrait" class="w-16 h-16 rounded-full object-cover shadow-sm ring-4 ring-primary-fixed/40" src="https://lh3.googleusercontent.com/aida/AEtjO1UUaL1fm5tTHrbi0wTiY0OKVzg0De4HRylxkGbFl4FxZOMn87uFhMIPo_qL9zxWs0jchZ_cEYZoSr3_NXtVLt1FqsabOAY-2XDNlCCGwb5fN4sGjRysGbIavqcM6Dl5n7J1LDdHj5j4z0ImW5DkEpjNJE71p1Lkwv9uxGv_vSBZ1vGujsHmK5WGQo1kvszkU8mnIAkNzZCrSdZJEZDBifc4Jd6oZshVDOZY-JHNoERkLA"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-primary text-on-primary rounded-full flex items-center justify-center ring-2 ring-surface-container-lowest" title="Account Owner">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Currently Active
+            </span>
+</div>
+<!-- Name & Details -->
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sarah Jenkins</h2>
+<span class="material-symbols-outlined text-[18px] text-primary" title="Verified Primary User">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Self (Account Owner)</span>
+</div>
+<!-- Visual Stat Meter: Weekly Adherence -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Weekly Adherence</span>
+<span class="font-semibold text-primary">95%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 95%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>4 Active Prescriptions</span>
+<span>4 Daily Doses</span>
+</div>
+</div>
+<!-- Context Pill Info -->
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">medication</span>
+              Atorvastatin, Vitamin D3 + 2 more
+            </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">alarm</span>
+              Next: 08:30 PM
+            </span>
+</div>
+</div>
+<!-- Card Footer CTA -->
+<div class="pt-space-md mt-space-sm flex flex-col gap-space-xs">
+<button class="w-full py-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center gap-space-xs cursor-default" disabled="">
+<span class="material-symbols-outlined text-[18px] text-primary">radio_button_checked</span>
+<span>Active Profile Selected</span>
+</button>
+<div class="flex items-center justify-between px-space-xs pt-1">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">edit</span> Edit Preferences
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Primary Admin</span>
+</div>
+</div>
+</div>
+<!-- Profile 2: Eleanor Jenkins (Caregiver Access) -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<!-- Top Row -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="relative">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Warm studio photographic portrait of Eleanor, a gentle 68-year-old grandmother smiling warmly with silver-grey hair tied loosely, wearing a cozy knit sage cardigan, serene soft diffused lighting against an airy neutral background, natural realistic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_SbSGRu0Ki5S3PEgg6BkW-wlpSOYtrVgFWjTiqFgLZb_u22uKVD_u_7C5gQfUgaGyprdnH7l-rldYmqtlcT9UlO7LBmWGIL1e6NdrR9P1qwuFlsUzK5SuoUl8HGEjenCWboH9abcIFCG55TfzzbiiO_OqcXkOK3oWjDi8N7g8M3urrW-I1RrvDKyvCfZP__868DhfPh5AzV4bn2Zk68NGxrC7xgxGIztPlC7W2cm1"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-secondary text-on-secondary rounded-full flex items-center justify-center ring-2 ring-surface-container-lowest" title="Caregiver Managed">
+<span class="material-symbols-outlined text-[10px]">family_restroom</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Caregiver Access
+            </span>
+</div>
+<!-- Name & Details -->
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Eleanor Jenkins</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mother (Age 68)</span>
+</div>
+<!-- Visual Stat Meter: Weekly Adherence -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Weekly Adherence</span>
+<span class="font-semibold text-secondary">92%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 92%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>3 Active Prescriptions</span>
+<span>3 Daily Doses</span>
+</div>
+</div>
+<!-- Managed Caregiver Notes -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">notes</span>
+              Caregiver Focus
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              Blood pressure schedule and arthritis supplements.
+            </p>
+</div>
+</div>
+<!-- Card Footer CTA -->
+<div class="pt-space-md mt-space-sm flex flex-col gap-space-xs">
+<button class="w-full py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors group-hover:text-primary" onclick="switchProfile('Eleanor Jenkins')">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Switch to Eleanor's Vault</span>
+</button>
+<div class="flex items-center justify-between px-space-xs pt-1">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">edit</span> Edit Profile
+            </button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">lock_person</span> Permissions
+            </button>
+</div>
+</div>
+</div>
+<!-- Profile 3: Thomas Jenkins (Dependent) -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<!-- Top Row -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="relative">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-headline-md text-headline-md shadow-sm">
+                TJ
+              </div>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-tertiary text-on-tertiary rounded-full flex items-center justify-center ring-2 ring-surface-container-lowest" title="Dependent Minor">
+<span class="material-symbols-outlined text-[10px]">child_care</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Dependent
+            </span>
+</div>
+<!-- Name & Details -->
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Thomas Jenkins</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Child (Age 8)</span>
+</div>
+<!-- Visual Stat Meter: Weekly Adherence -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Regimen Adherence</span>
+<span class="font-semibold text-primary">100%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>1 Active Prescription</span>
+<span>1 Daily Dose</span>
+</div>
+</div>
+<!-- Managed Caregiver Notes -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">notes</span>
+              Pediatric Guidance
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              Pediatric Cetirizine 5mg during spring/autumn.
+            </p>
+</div>
+</div>
+<!-- Card Footer CTA -->
+<div class="pt-space-md mt-space-sm flex flex-col gap-space-xs">
+<button class="w-full py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors group-hover:text-primary" onclick="switchProfile('Thomas Jenkins')">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Switch to Thomas's Vault</span>
+</button>
+<div class="flex items-center justify-between px-space-xs pt-1">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">edit</span> Edit Profile
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guardian Managed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Row: Add Family Member Interactive Card & Quick Insights -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-stretch">
+<!-- Interactive Add Member Card (Bento span 5) -->
+<div class="lg:col-span-5 cursor-pointer group rounded-xl p-space-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between" id="add-member-card">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">group_add</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Add Family Member</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Create a separate, private profile for a child, spouse, or elder to track their medications, dosage alerts, and doctor contacts.
+            </p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ Create Member Profile</span>
+</button>
+</div>
+</div>
+<!-- Family Overview & Shared Schedule Highlights (Bento span 7) -->
+<div class="lg:col-span-7 rounded-xl p-space-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">event_repeat</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Upcoming Family Doses</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aggregated schedule for all dependents today</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/30 px-space-sm py-1 rounded-full font-semibold">Today's Queue</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Dose Item 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Eleanor • Amlodipine Besylate 5mg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scheduled for 12:00 PM • Take with water after lunch</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-medium">In 45 min</span>
+</div>
+<!-- Dose Item 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Thomas • Cetirizine 5mg Chewable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scheduled for 06:00 PM • Evening allergy relief</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Upcoming</span>
+</div>
+<!-- Dose Item 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Sarah • Atorvastatin Calcium 20mg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scheduled for 08:30 PM • Evening maintenance</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Pending</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">done_all</span>
+            3 of 8 family doses taken today
+          </span>
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline">
+            View Consolidated Timeline →
+          </button>
+</div>
+</div>
+</div>
+<!-- Quick Management & Privacy Separation Box -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">enhanced_encryption</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-space-xs">
+<span>Multi-Profile Privacy &amp; Separation</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-normal">HIPAA Compliant Architecture</span>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+            Each family profile maintains strictly isolated schedules, reminders, and prescription document storage. MediVault ensures zero data mixing across profiles. Caregiver access can be revoked or audited at any time.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-stretch md:self-auto justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">policy</span>
+<span>Access Logs</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Export Records</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over / Modal for Adding Family Member -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-space-md" id="add-member-modal">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" id="modal-backdrop"></div>
+<!-- Modal Content Window -->
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-xl p-space-lg flex flex-col gap-space-md z-10 max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Add New Family Profile</h3>
+</div>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Create an independent health record partition. Prescriptions, dosage reminders, and medical notes will remain securely linked to this specific individual.
+      </p>
+<form class="flex flex-col gap-space-md" id="add-member-form">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="member-name">Full Legal or Preferred Name</label>
+<input class="h-11 px-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="member-name" placeholder="e.g. David Jenkins" required="" type="text"/>
+</div>
+<!-- Relationship & Date of Birth Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="member-relationship">Relationship</label>
+<select class="h-11 px-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="member-relationship">
+<option value="Child">Child (Dependent)</option>
+<option value="Parent">Parent / Elder</option>
+<option value="Spouse">Spouse / Partner</option>
+<option value="Sibling">Sibling</option>
+<option value="Other">Other Family Dependent</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="member-dob">Date of Birth</label>
+<input class="h-11 px-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="member-dob" type="date"/>
+</div>
+</div>
+<!-- Access Level Radio Select -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Profile Access Mode</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<label class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="mt-1 accent-primary" name="access-type" type="radio" value="caregiver"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Full Caregiver</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Log doses &amp; manage prescriptions</span>
+</div>
+</label>
+<label class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-1 accent-primary" name="access-type" type="radio" value="view-only"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">View Only</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monitor schedule without edits</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Primary Care Physician / Medical Note -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="member-notes">Initial Care Notes (Optional)</label>
+<textarea class="p-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="member-notes" placeholder="e.g. Pediatrician Dr. Gomez, known allergy to penicillin..." rows="2"></textarea>
+</div>
+<!-- Submit & Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors" id="cancel-modal-btn" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm transition-all active:scale-[0.98]" type="submit">
+            Save &amp; Create Profile
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Feedback Component -->
+<div class="fixed bottom-6 right-6 z-50 hidden transform transition-all duration-300" id="profile-switch-toast">
+<div class="flex items-center gap-space-sm bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-lg">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-message">Switched active vault successfully.</span>
+</div>
+</div>
+<script>
+    (function () {
+      const modal = document.getElementById('add-member-modal');
+      const openBtn = document.getElementById('open-add-modal-btn');
+      const addCard = document.getElementById('add-member-card');
+      const closeBtn = document.getElementById('close-modal-btn');
+      const cancelBtn = document.getElementById('cancel-modal-btn');
+      const backdrop = document.getElementById('modal-backdrop');
+      const form = document.getElementById('add-member-form');
+      const toast = document.getElementById('profile-switch-toast');
+      const toastMsg = document.getElementById('toast-message');
+
+      function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (addCard) addCard.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+      if (backdrop) backdrop.addEventListener('click', closeModal);
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const nameInput = document.getElementById('member-name').value;
+          closeModal();
+          form.reset();
+          showToast('Added ' + (nameInput || 'family member') + ' profile successfully!');
+        });
+      }
+
+      window.switchProfile = function(memberName) {
+        showToast("Switched vault to: " + memberName);
+      };
+
+      function showToast(text) {
+        if (!toast) return;
+        toastMsg.textContent = text;
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 3200);
+      }
+    })();
+  </script>
+</div></main></div></body></html>

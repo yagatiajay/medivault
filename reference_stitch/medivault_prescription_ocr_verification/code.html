@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-variant":"#d3e4fe","on-surface-variant":"#3d4947","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","tertiary":"#545c72","on-secondary-container":"#00476e","background":"#f8f9ff","primary":"#00685f","surface-container-high":"#dce9ff","primary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eaf1ff","outline-variant":"#bcc9c6","error":"#ba1a1a","inverse-surface":"#213145","outline":"#6d7a77","tertiary-container":"#6c748b","on-primary":"#ffffff","on-tertiary-container":"#fefcff","surface-tint":"#006a61","surface-container-highest":"#d3e4fe","on-primary-fixed":"#00201d","on-secondary":"#ffffff","surface-bright":"#f8f9ff","inverse-primary":"#6bd8cb","tertiary-fixed":"#dae2fd","on-tertiary-fixed-variant":"#3f465c","surface-container-lowest":"#ffffff","primary-container":"#008378","primary-fixed":"#89f5e7","secondary-fixed-dim":"#93ccff","surface":"#f8f9ff","on-background":"#0b1c30","on-surface":"#0b1c30","on-primary-fixed-variant":"#005049","error-container":"#ffdad6","on-error":"#ffffff","on-secondary-fixed":"#001d31","secondary":"#006398","surface-container":"#e5eeff","on-tertiary-fixed":"#131b2e","secondary-fixed":"#cce5ff","on-secondary-fixed-variant":"#004b73","on-primary-container":"#f4fffc","tertiary-fixed-dim":"#bec6e0","secondary-container":"#5bb8fe","on-error-container":"#93000a"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem",margin:"1rem","margin-md":"2rem",gutter:"1rem","gutter-md":"1.5rem","space-sm":"0.5rem","space-xl":"2rem","space-xs":"0.25rem","margin-lg":"3rem","space-md":"1rem","gutter-lg":"2rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"500"}],"display-lg":["40px",{lineHeight:"48px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-lg-mobile":["32px",{lineHeight:"40px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"500"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg flex items-center gap-space-sm"><img alt="MediVault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XhBr1t0wrgYNJLGGvQ1HmpDDcZHzFaMJc7F9NThLqMcko3CaHPY2s_TMOLHVeWiODGs32ZVd4OcYeN2LFRDYYXmm6_HGQLbZlorfgkmLAPfXQ8xjrDeKjCjnD7IK8kIFhOappXLRJeA9sRlPAhe3fFaTZhJsOn2JKlHNo7Okfn8IuzzJdzpFKex1kaCcEZOhft-uCatdp4sQS_HkdHqnZyLt2y0pQT8Lh2YB6KruMdgA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MediVault</span><span class="font-label-sm text-label-sm text-on-surface-variant">Personal Health Organizer</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Health Overview</span></div><nav class="flex flex-col gap-space-xs px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="medications" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-md text-body-md">Medications</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="schedule" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-body-md text-body-md">Schedule</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prescriptions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Prescriptions</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reminders" href="#"><span class="material-symbols-outlined text-[20px]">alarm</span><span class="font-body-md text-body-md">Reminders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="family-profiles" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Family Profiles</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/><div class="flex flex-col truncate"><span class="font-label-lg text-label-lg text-on-surface truncate">Sarah Jenkins</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">sarah.j@example.com</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="text-on-surface-variant hover:text-primary transition-colors p-space-xs rounded" title="Quick Settings" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button><button class="text-on-surface-variant hover:text-error transition-colors p-space-xs rounded" title="Sign Out" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div><div class="px-space-xs py-space-xs text-center"><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight opacity-75">MediVault does not provide medical advice. Personal records organizer only.</p></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md max-w-md w-full"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search medications, doctors, logs..." type="search"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant shadow-sm border border-outline-variant/30">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-[18px] text-primary">account_circle</span><span class="font-label-sm text-label-sm text-on-surface-variant">Viewing records for:</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Jenkins (Me)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-sm"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Notifications" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Help and Documentation" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] w-full mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-md">
+<!-- Top Breadcrumb & Workflow Step Meta -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Prescriptions</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface-variant/80">New Upload</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-md text-label-md text-primary font-semibold">OCR Review &amp; Verification</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-full shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide uppercase">Step 2 of 2</span>
+</div>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dual-source validation required</span>
+</div>
+</div>
+<!-- 2-Column Split Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-md lg:gap-gutter-lg items-start">
+<!-- LEFT COLUMN: Document Viewer & Scan Inspection -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<!-- Document Viewer Frame -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Inspection Toolbar -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">document_scanner</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-semibold">dr_vance_rx_oct2024.jpg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3.2 MB • High-Resolution Scan</span>
+</div>
+</div>
+<!-- View Controls -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="zoom-out" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface px-1" id="zoom-level">100%</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="zoom-in" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<div class="w-px h-4 bg-outline-variant/40 mx-0.5"></div>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="rotate-doc" title="Rotate Document" type="button">
+<span class="material-symbols-outlined text-[16px]">rotate_right</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="reset-doc" title="Fit to Screen" type="button">
+<span class="material-symbols-outlined text-[16px]">crop_free</span>
+</button>
+</div>
+</div>
+<!-- Interactive Paper Mockup Stage -->
+<div class="relative bg-surface-dim/40 p-space-md sm:p-space-lg flex justify-center items-center min-h-[580px] overflow-hidden">
+<!-- Paper Canvas -->
+<div class="relative w-full max-w-[460px] bg-[#FAF8F5] text-[#1E293B] rounded shadow-lg p-space-lg transition-transform duration-200 select-none" id="rx-paper">
+<!-- Subtle Paper Texture Watermark -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/[0.015] to-black/[0.03] pointer-events-none rounded"></div>
+<!-- Prescription Header -->
+<div class="relative flex justify-between items-start pb-space-sm border-b border-black/10">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] leading-tight font-bold tracking-tight text-slate-900">LAKESHORE HEALTH CLINIC</span>
+<span class="font-body-sm text-[11px] leading-tight text-slate-600">Family &amp; Internal Medicine</span>
+<span class="font-body-sm text-[11px] leading-tight text-slate-500">429 Pinecrest Way, Suite 300 • (555) 438-9921</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="material-symbols-outlined text-[32px] text-teal-800/80">local_hospital</span>
+<span class="font-label-sm text-[10px] text-slate-400 font-mono">RX# 98214-B</span>
+</div>
+</div>
+<!-- Physician & Patient Details -->
+<div class="grid grid-cols-2 gap-space-xs py-space-sm text-[12px] border-b border-black/5">
+<div>
+<span class="font-label-sm text-[10px] uppercase text-slate-500 block">Prescriber</span>
+<span class="font-semibold text-slate-800">Dr. Robert Vance, M.D.</span>
+<span class="text-[10px] text-slate-500 block">NPI: 1849204918</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-[10px] uppercase text-slate-500 block">Date</span>
+<span class="font-semibold text-slate-800">10/21/2024</span>
+<span class="text-[10px] text-slate-500 block">DOB: 04/12/1988</span>
+</div>
+</div>
+<div class="py-space-xs text-[12px]">
+<span class="font-label-sm text-[10px] uppercase text-slate-500">Patient Name: </span>
+<span class="font-semibold text-slate-800 underline decoration-dotted decoration-teal-600">Sarah Jenkins</span>
+</div>
+<!-- Rx Symbol and Prescription Core Body -->
+<div class="pt-space-sm pb-space-md">
+<div class="font-display-lg text-[34px] leading-none font-bold text-teal-900 font-serif italic mb-2">℞</div>
+<div class="space-y-space-sm pl-2 font-mono text-[13px] leading-relaxed text-slate-800">
+<!-- Detected Bounding Box: Medication & Strength -->
+<div class="relative group cursor-pointer bg-teal-500/10 p-1.5 rounded transition-all ring-1 ring-teal-600/40">
+<span class="absolute -top-2.5 right-2 bg-teal-700 text-white font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded shadow-sm">Medication / Strength [99.4%]</span>
+<span class="font-bold text-[15px] text-slate-900">Amoxicillin 500mg</span>
+<span class="text-slate-600 ml-1">capsules</span>
+</div>
+<!-- Detected Bounding Box: Frequency / Sig -->
+<div class="relative group cursor-pointer bg-teal-500/10 p-1.5 rounded transition-all ring-1 ring-teal-600/40">
+<span class="absolute -top-2.5 right-2 bg-teal-700 text-white font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded shadow-sm">Sig / Frequency [98.9%]</span>
+<span class="font-semibold">Sig: </span>1 capsule by mouth BID (twice daily, every 12h)
+                  </div>
+<!-- Detected Bounding Box: Duration & Instructions -->
+<div class="relative group cursor-pointer bg-teal-500/10 p-1.5 rounded transition-all ring-1 ring-teal-600/40">
+<span class="absolute -top-2.5 right-2 bg-teal-700 text-white font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded shadow-sm">Duration &amp; Notes [99.1%]</span>
+<span>x 7 days. Take after food with a full glass of water. Complete full course.</span>
+</div>
+<!-- Dispense metadata -->
+<div class="pt-1 text-[11px] text-slate-600 flex justify-between">
+<span>Disp: #14 (Fourteen)</span>
+<span>Refills: 0 (Zero)</span>
+</div>
+</div>
+</div>
+<!-- Prescription Signature Footer -->
+<div class="pt-space-md border-t border-black/10 flex justify-between items-end">
+<div class="text-[10px] text-slate-500">
+<span>DEA#: BV4910283</span><br/>
+<span>Dispense as Written</span>
+</div>
+<div class="flex flex-col items-center">
+<!-- Doctor Signature Stroke Mockup -->
+<svg class="w-32 h-9 text-teal-900" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 160 40">
+<path d="M10 25 C30 8, 45 35, 60 15 C75 -2, 85 28, 105 20 C120 12, 135 32, 150 18" stroke-linecap="round"></path>
+<path d="M35 22 L75 22" stroke-linecap="round"></path>
+</svg>
+<span class="font-label-sm text-[9px] text-slate-500 -mt-1">Dr. Robert Vance, M.D.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Document Extractor Confidence Indicator -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">OCR Extraction Complete</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-bold">99.2% Score</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All 6 core dosage parameters located and parsed.</span>
+</div>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container flex items-center gap-1 font-semibold transition-colors" id="toggle-layer" type="button">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+<span>Toggle OCR Layers</span>
+</button>
+</div>
+</div>
+<!-- Scanning Intelligence Summary Pill Container -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Image Resolution</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5">300 DPI (Crisp)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Parser Engine</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5">RxNet Medical v4</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Security Hash</span>
+<span class="font-label-lg text-label-lg font-mono text-on-surface mt-0.5 truncate">SHA-256 #8f2a</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Verification & Edit Form -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<!-- MANDATORY VERIFICATION NOTICE BOX -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">IMPORTANT: Verify Extracted Information</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Please inspect and confirm every field against your doctor's original prescription before saving. MediVault will <strong class="text-primary font-semibold">never automatically commit scanned data</strong> without your explicit confirmation.
+              </p>
+</div>
+</div>
+</div>
+<!-- Verification Form Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Extracted Medication Record</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Modify or accept the parsed medication schedule attributes below.</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant">6 of 6 Verified</span>
+</div>
+<form class="flex flex-col gap-space-md" id="ocr-verification-form" onsubmit="event.preventDefault();">
+<!-- Field 1: Medication Name -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-med-name">
+                  Medication Name <span class="text-error">*</span>
+</label>
+<div class="flex items-center gap-1 text-[11px] font-semibold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Match: High Confidence (99.4%)</span>
+</div>
+</div>
+<div class="relative">
+<input class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all font-medium" id="field-med-name" type="text" value="Amoxicillin"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-[18px] text-primary">task_alt</span>
+</div>
+</div>
+<!-- Field 2: Dosage / Strength & Form -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-strength">Dosage / Strength <span class="text-error">*</span></label>
+<span class="font-label-sm text-label-sm text-primary">Exact match</span>
+</div>
+<div class="relative">
+<input class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all font-medium" id="field-strength" type="text" value="500 mg"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-form">Dosage Form</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all appearance-none cursor-pointer" id="field-form">
+<option selected="" value="Capsule">Capsule (Oral)</option>
+<option value="Tablet">Tablet</option>
+<option value="Liquid Suspension">Liquid Suspension</option>
+<option value="Injection">Injection</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Field 3: Frequency & Suggested Times -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-frequency">Frequency &amp; Regimen <span class="text-error">*</span></label>
+<span class="font-label-sm text-label-sm text-primary">Parsed: "Sig: BID"</span>
+</div>
+<input class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all font-medium" id="field-frequency" type="text" value="Twice daily (Every 12 hours)"/>
+<!-- Suggested Dose Timings Chips -->
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended Slots:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span> 08:00 AM
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">bedtime</span> 08:00 PM
+                </span>
+</div>
+</div>
+<!-- Field 4: Course Duration & Dates -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-duration">Duration</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all font-medium" id="field-duration" type="text" value="7 Days"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-start">Start Date</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="field-start" type="date" value="2024-10-21"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-end">End Date</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="field-end" type="date" value="2024-10-28"/>
+</div>
+</div>
+<!-- Field 5: Prescribing Physician -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-physician">Prescribing Physician &amp; Clinic</label>
+<div class="relative">
+<input class="w-full h-11 pl-10 pr-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all font-medium" id="field-physician" type="text" value="Dr. Robert Vance, MD (Lakeshore Health Clinic)"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-[18px] text-on-surface-variant">person</span>
+</div>
+</div>
+<!-- Field 6: Instructions & Dietary Notes -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="field-instructions">Instructions &amp; Dietary Notes</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Special warning flagged</span>
+</div>
+<textarea class="w-full p-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all leading-normal font-medium resize-none" id="field-instructions" rows="2">Take after meal with a full glass of water. Complete full course even if symptoms subside.</textarea>
+</div>
+<!-- Verification Affirmation Checkbox -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary/20 accent-primary cursor-pointer" id="verify-ack" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface select-none cursor-pointer" for="verify-ack">
+                I have cross-referenced the highlighted OCR extracted fields above against the doctor's prescription slip and certify the details are accurate for Sarah Jenkins.
+              </label>
+</div>
+<!-- Action Buttons Bar -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-space-sm">
+<button class="h-11 px-space-md rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+<span>Cancel &amp; Discard</span>
+</button>
+<button class="h-11 px-space-md rounded-xl font-label-lg text-label-lg text-on-surface bg-surface-container-high hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Edit All Fields</span>
+</button>
+<button class="h-11 px-space-lg rounded-xl font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-md" id="confirm-save-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Confirm &amp; Save to Medications</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Safety Disclaimer Bar -->
+<div class="px-space-md py-space-sm rounded-xl bg-surface-container-lowest text-center shadow-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Clinical Disclaimer:</span> MediVault does not analyze drug interactions or calibrate therapeutic doses. Enter exact physician directives.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initOCRControls() {
+    const rxPaper = document.getElementById('rx-paper');
+    const zoomInBtn = document.getElementById('zoom-in');
+    const zoomOutBtn = document.getElementById('zoom-out');
+    const rotateBtn = document.getElementById('rotate-doc');
+    const resetBtn = document.getElementById('reset-doc');
+    const zoomLevelEl = document.getElementById('zoom-level');
+    const toggleLayerBtn = document.getElementById('toggle-layer');
+    const confirmBtn = document.getElementById('confirm-save-btn');
+    const verifyAck = document.getElementById('verify-ack');
+
+    let currentZoom = 1;
+    let currentRotation = 0;
+    let layersVisible = true;
+
+    function updateTransform() {
+      if (rxPaper) {
+        rxPaper.style.transform = `scale(${currentZoom}) rotate(${currentRotation}deg)`;
+      }
+      if (zoomLevelEl) {
+        zoomLevelEl.textContent = `${Math.round(currentZoom * 100)}%`;
+      }
+    }
+
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', () => {
+        if (currentZoom < 1.6) {
+          currentZoom += 0.15;
+          updateTransform();
+        }
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', () => {
+        if (currentZoom > 0.75) {
+          currentZoom -= 0.15;
+          updateTransform();
+        }
+      });
+    }
+
+    if (rotateBtn) {
+      rotateBtn.addEventListener('click', () => {
+        currentRotation = (currentRotation + 90) % 360;
+        updateTransform();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        currentZoom = 1;
+        currentRotation = 0;
+        updateTransform();
+      });
+    }
+
+    if (toggleLayerBtn) {
+      toggleLayerBtn.addEventListener('click', () => {
+        layersVisible = !layersVisible;
+        const boxes = rxPaper ? rxPaper.querySelectorAll('.group') : [];
+        boxes.forEach((box) => {
+          if (layersVisible) {
+            box.classList.add('bg-teal-500/10', 'ring-1');
+          } else {
+            box.classList.remove('bg-teal-500/10', 'ring-1');
+          }
+        });
+      });
+    }
+
+    if (confirmBtn && verifyAck) {
+      confirmBtn.addEventListener('click', () => {
+        if (!verifyAck.checked) {
+          alert('Please check the verification acknowledgement checkbox before confirming.');
+          verifyAck.focus();
+          return;
+        }
+        
+        confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Saving Medication...</span>';
+        confirmBtn.disabled = true;
+
+        setTimeout(() => {
+          confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done</span><span>Saved to Medications!</span>';
+          confirmBtn.classList.remove('bg-primary');
+          confirmBtn.classList.add('bg-teal-700');
+        }, 800);
+      });
+    }
+  })();
+</script></main></div></body></html>

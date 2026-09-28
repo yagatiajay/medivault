@@ -1,0 +1,15 @@
+# Node
+node_modules/
+client/node_modules/
+dist/
+client/dist/
+.DS_Store
+
+# .NET & C#
+bin/
+obj/
+server/bin/
+server/obj/
+*.user
+*.suo
+.vscode/

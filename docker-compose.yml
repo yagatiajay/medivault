@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: medivault_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: medivault_secret_password
+      POSTGRES_DB: medivault_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - medivault_net
+
+  # 2. Redis In-Memory Cache
+  redis:
+    image: redis:7-alpine
+    container_name: medivault_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - medivault_net
+
+  # 3. RabbitMQ Message Broker with Management Web Dashboard
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: medivault_rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: medivault_admin
+      RABBITMQ_DEFAULT_PASS: medivault_rabbit_pass
+    ports:
+      - "5672:5672"    # AMQP protocol port (used by .NET API)
+      - "15672:15672"  # Web Management UI port (open in your browser!)
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - medivault_net
+
+volumes:
+  postgres_data:
+  redis_data:
+  rabbitmq_data:
+
+networks:
+  medivault_net:
+    driver: bridge

@@ -1,0 +1,12 @@
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text.Json;
+global using System.Threading.Tasks;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Caching.Distributed;
+global using MediVault.Server.Data;
+global using MediVault.Server.Models;
+global using MediVault.Server.Repositories;
+global using MediVault.Server.Services;

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-variant":"#d3e4fe","on-surface-variant":"#3d4947","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","tertiary":"#545c72","on-secondary-container":"#00476e","background":"#f8f9ff","primary":"#00685f","surface-container-high":"#dce9ff","primary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eaf1ff","outline-variant":"#bcc9c6","error":"#ba1a1a","inverse-surface":"#213145","outline":"#6d7a77","tertiary-container":"#6c748b","on-primary":"#ffffff","on-tertiary-container":"#fefcff","surface-tint":"#006a61","surface-container-highest":"#d3e4fe","on-primary-fixed":"#00201d","on-secondary":"#ffffff","surface-bright":"#f8f9ff","inverse-primary":"#6bd8cb","tertiary-fixed":"#dae2fd","on-tertiary-fixed-variant":"#3f465c","surface-container-lowest":"#ffffff","primary-container":"#008378","primary-fixed":"#89f5e7","secondary-fixed-dim":"#93ccff","surface":"#f8f9ff","on-background":"#0b1c30","on-surface":"#0b1c30","on-primary-fixed-variant":"#005049","error-container":"#ffdad6","on-error":"#ffffff","on-secondary-fixed":"#001d31","secondary":"#006398","surface-container":"#e5eeff","on-tertiary-fixed":"#131b2e","secondary-fixed":"#cce5ff","on-secondary-fixed-variant":"#004b73","on-primary-container":"#f4fffc","tertiary-fixed-dim":"#bec6e0","secondary-container":"#5bb8fe","on-error-container":"#93000a"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem",margin:"1rem","margin-md":"2rem",gutter:"1rem","gutter-md":"1.5rem","space-sm":"0.5rem","space-xl":"2rem","space-xs":"0.25rem","margin-lg":"3rem","space-md":"1rem","gutter-lg":"2rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"500"}],"display-lg":["40px",{lineHeight:"48px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-lg-mobile":["32px",{lineHeight:"40px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"500"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg flex items-center gap-space-sm"><img alt="MediVault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XhBr1t0wrgYNJLGGvQ1HmpDDcZHzFaMJc7F9NThLqMcko3CaHPY2s_TMOLHVeWiODGs32ZVd4OcYeN2LFRDYYXmm6_HGQLbZlorfgkmLAPfXQ8xjrDeKjCjnD7IK8kIFhOappXLRJeA9sRlPAhe3fFaTZhJsOn2JKlHNo7Okfn8IuzzJdzpFKex1kaCcEZOhft-uCatdp4sQS_HkdHqnZyLt2y0pQT8Lh2YB6KruMdgA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MediVault</span><span class="font-label-sm text-label-sm text-on-surface-variant">Personal Health Organizer</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Health Overview</span></div><nav class="flex flex-col gap-space-xs px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="medications" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-md text-body-md">Medications</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="schedule" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-body-md text-body-md">Schedule</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prescriptions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Prescriptions</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reminders" href="#"><span class="material-symbols-outlined text-[20px]">alarm</span><span class="font-body-md text-body-md">Reminders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="family-profiles" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Family Profiles</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/><div class="flex flex-col truncate"><span class="font-label-lg text-label-lg text-on-surface truncate">Sarah Jenkins</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">sarah.j@example.com</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="text-on-surface-variant hover:text-primary transition-colors p-space-xs rounded" title="Quick Settings" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button><button class="text-on-surface-variant hover:text-error transition-colors p-space-xs rounded" title="Sign Out" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div><div class="px-space-xs py-space-xs text-center"><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight opacity-75">MediVault does not provide medical advice. Personal records organizer only.</p></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md max-w-md w-full"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search medications, doctors, logs..." type="search"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant shadow-sm border border-outline-variant/30">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-[18px] text-primary">account_circle</span><span class="font-label-sm text-label-sm text-on-surface-variant">Viewing records for:</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Jenkins (Me)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-sm"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Notifications" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Help and Documentation" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Overlay (no global bleed, purely contained) -->
+<div class="relative w-full px-space-md md:px-space-xl lg:px-margin-lg py-space-lg">
+<!-- Top Action Banner & Page Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-xs mb-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase font-semibold">Verified Clinical Registry</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Medications</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Manage your active prescriptions, over-the-counter supplements, and archived regimens with therapeutic precision.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="inline-flex items-center gap-space-xs px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-all" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary">print</span>
+<span class="hidden sm:inline">Export Regimen</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container active:scale-[0.98] transition-all" id="open-add-modal" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add Medication</span>
+</button>
+</div>
+</div>
+<!-- Quick Stats Bento Overview -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Active Daily</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1 block">4 Prescriptions</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">pill</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Course Adherence</span>
+<div class="flex items-baseline gap-1.5 mt-1">
+<span class="font-headline-md text-headline-md text-primary">96%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">this week</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/40 flex items-center justify-center text-primary">
+<!-- Inline Sparkline / Adherence Progress Mini Chart -->
+<svg class="w-7 h-7 text-primary" viewbox="0 0 36 36">
+<path class="opacity-20" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="96, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Refill Attention</span>
+<span class="font-headline-md text-headline-md text-error mt-1 block">1 Pending</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">notification_important</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Total Catalog</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1 block">7 Records</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+</div>
+</div>
+<!-- Search & Filter Controls Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-on-surface-variant">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(0,104,95,0.25)] transition-all" id="medication-search" placeholder="Search medications by name, condition, or doctor..." type="search"/>
+</div>
+<!-- Sort Select and Mobile Filter Trigger -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant pointer-events-none">swap_vert</span>
+<select class="appearance-none bg-surface pl-9 pr-9 py-2.5 rounded-lg font-label-md text-label-md text-on-surface font-medium outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Sort by: Schedule (Earliest first)</option>
+<option>Sort by: Medication Name (A–Z)</option>
+<option>Sort by: Refill Supply (Low to High)</option>
+<option>Sort by: Date Added (Newest)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-[18px] text-on-surface-variant pointer-events-none">arrow_drop_down</span>
+</div>
+<button class="p-2.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant transition-colors" title="Additional Filters" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Segmented Category Filters -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<button class="med-tab active px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" data-filter="all" type="button">
+          All (6)
+        </button>
+<button class="med-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface hover:bg-surface-container-high text-on-surface-variant font-medium" data-filter="active" type="button">
+          Active (4)
+        </button>
+<button class="med-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface hover:bg-surface-container-high text-on-surface-variant font-medium" data-filter="completed" type="button">
+          Completed (2)
+        </button>
+<button class="med-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface hover:bg-surface-container-high text-on-surface-variant font-medium" data-filter="prn" type="button">
+          As-Needed / PRN (1)
+        </button>
+</div>
+</div>
+<!-- Medication Cards Grid (2-column desktop / responsive) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-xl">
+<!-- Card 1: Atorvastatin (Active) -->
+<article class="group relative bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
+<div>
+<!-- Header Area -->
+<div class="flex items-start justify-between gap-space-sm pl-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">vital_signs</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Atorvastatin</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Lipitor)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-0.5">20 mg • Oral Tablet</p>
+</div>
+</div>
+<!-- Soft Teal Active Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-primary-fixed/40 text-on-primary-fixed-variant shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Active
+            </span>
+</div>
+<!-- Metadata Spec Grid -->
+<div class="mt-space-md pl-2 flex flex-col gap-2.5">
+<!-- Schedule -->
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">schedule</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Once daily with breakfast</span>
+<span class="text-on-surface-variant block">(08:00 AM)</span>
+</div>
+</div>
+<!-- Duration & Regimen Period -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">calendar_month</span>
+<span class="font-body-sm text-body-sm">Started May 12, 2024 • Ongoing</span>
+</div>
+<!-- Prescriber -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">stethoscope</span>
+<span class="font-body-sm text-body-sm">Dr. Katherine Miller <span class="text-on-surface-variant/80 font-normal">(Cardiology)</span></span>
+</div>
+<!-- Rx Link -->
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[18px] shrink-0">receipt_long</span>
+<a class="font-label-md text-label-md underline hover:text-primary-container transition-colors" href="#">Prescription #RX-88419</a>
+</div>
+<!-- Refill Remaining Indicator -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">inventory</span>
+<span class="font-label-sm text-label-sm font-medium">Supply Status:</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">28 days supply</span>
+</div>
+</div>
+</div>
+<!-- Footer Quick Actions -->
+<div class="mt-space-lg pt-space-sm pl-2 flex items-center justify-between bg-surface-container-lowest">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all" type="button">
+            View Details
+          </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors" title="Edit Regimen" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-tertiary transition-colors" title="Archive Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Lisinopril (Active - Refill Alert) -->
+<article class="group relative bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary-container"></div>
+<div>
+<!-- Header Area -->
+<div class="flex items-start justify-between gap-space-sm pl-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">cardiology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Lisinopril</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-0.5">10 mg • Oral Tablet</p>
+</div>
+</div>
+<!-- Active Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-primary-fixed/40 text-on-primary-fixed-variant shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Active
+            </span>
+</div>
+<!-- Metadata Spec Grid -->
+<div class="mt-space-md pl-2 flex flex-col gap-2.5">
+<!-- Schedule -->
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">nights_stay</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Once daily at bedtime</span>
+<span class="text-on-surface-variant block">(08:00 PM)</span>
+</div>
+</div>
+<!-- Duration & Regimen Period -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">calendar_month</span>
+<span class="font-body-sm text-body-sm">Started Jan 15, 2024 • Ongoing</span>
+</div>
+<!-- Prescriber -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">stethoscope</span>
+<span class="font-body-sm text-body-sm">Dr. Katherine Miller</span>
+</div>
+<!-- Rx Link -->
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[18px] shrink-0">receipt_long</span>
+<a class="font-label-md text-label-md underline hover:text-on-secondary-container transition-colors" href="#">Prescription #RX-90112</a>
+</div>
+<!-- Refill Remaining Indicator with Amber Warning -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-error-container/30 flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span class="font-label-sm text-label-sm font-semibold">Refill Warning</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-error">5 days supply (Refill soon)</span>
+</div>
+</div>
+</div>
+<!-- Footer Quick Actions -->
+<div class="mt-space-lg pt-space-sm pl-2 flex items-center justify-between bg-surface-container-lowest">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all" type="button">
+            View Details
+          </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors" title="Edit Regimen" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-tertiary transition-colors" title="Archive Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Amoxicillin (Active - Short term course) -->
+<article class="group relative bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-tertiary-container"></div>
+<div>
+<!-- Header Area -->
+<div class="flex items-start justify-between gap-space-sm pl-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">medication</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Amoxicillin</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-0.5">500 mg • Capsule</p>
+</div>
+</div>
+<!-- Course Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant shrink-0">
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+              Active (Course: Day 4 of 7)
+            </span>
+</div>
+<!-- Course Progress Graphic -->
+<div class="pl-2 mt-space-sm">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Antibiotic Course Progress</span>
+<span class="font-semibold text-on-surface">57% Complete</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 57.1%;"></div>
+</div>
+</div>
+<!-- Metadata Spec Grid -->
+<div class="mt-space-md pl-2 flex flex-col gap-2.5">
+<!-- Schedule -->
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">restaurant</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Twice daily with meals</span>
+<span class="text-on-surface-variant block">(08:00 AM, 01:00 PM)</span>
+</div>
+</div>
+<!-- Duration & Regimen Period -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">date_range</span>
+<span class="font-body-sm text-body-sm">Oct 21, 2024 – Oct 28, 2024</span>
+</div>
+<!-- Prescriber -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">local_hospital</span>
+<span class="font-body-sm text-body-sm">Dr. Robert Vance <span class="text-on-surface-variant/80 font-normal">(ENT)</span></span>
+</div>
+<!-- Clinical Directive Note -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">info</span>
+<span class="font-body-sm text-body-sm">Finish entire prescribed regimen even if symptoms improve.</span>
+</div>
+</div>
+</div>
+<!-- Footer Quick Actions -->
+<div class="mt-space-lg pt-space-sm pl-2 flex items-center justify-between bg-surface-container-lowest">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all" type="button">
+            View Details
+          </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors" title="Edit Regimen" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-tertiary transition-colors" title="Archive Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Prednisone (Completed / Inactive) -->
+<article class="group relative bg-surface-container-lowest/80 opacity-85 hover:opacity-100 rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-outline-variant"></div>
+<div>
+<!-- Header Area -->
+<div class="flex items-start justify-between gap-space-sm pl-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[26px]">task_alt</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Prednisone</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-0.5">5 mg • Oral Tablet</p>
+</div>
+</div>
+<!-- Soft Gray Completed Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+              Completed
+            </span>
+</div>
+<!-- Metadata Spec Grid -->
+<div class="mt-space-md pl-2 flex flex-col gap-2.5">
+<!-- Schedule / Completion Info -->
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0 mt-0.5">event_available</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Tapering dose</span>
+<span class="text-on-surface-variant block">Successfully completed Sept 30, 2024</span>
+</div>
+</div>
+<!-- Historical Note -->
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">history</span>
+<span class="font-body-sm text-body-sm">Course span: 14 days total protocol</span>
+</div>
+<!-- Taper Plan Complete summary indicator -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Final daily intake reached 0 mg</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Zero side effects logged</span>
+</div>
+</div>
+</div>
+<!-- Footer Quick Actions -->
+<div class="mt-space-lg pt-space-sm pl-2 flex items-center justify-between bg-surface-container-lowest">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all" type="button">
+            View Details
+          </button>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-surface-container-low text-primary font-label-md text-label-md transition-colors" title="Reactivate this regimen" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reactivate</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-tertiary transition-colors" title="Archive Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Supplementary Clinical Insight & Pharmacy Hub Bento Card -->
+<div class="rounded-2xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low p-space-lg mb-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">local_pharmacy</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Preferred Dispensing Pharmacy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Walgreens Pharmacy #1409 • 845 N Michigan Ave, Chicago, IL • (312) 555-0198
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-4 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface transition-colors" type="button">
+          Change Pharmacy
+        </button>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-colors" type="button">
+          Request All Refills
+        </button>
+</div>
+</div>
+<!-- Legal & Medical Advisory Disclaimer -->
+<div class="flex items-center justify-center gap-space-xs p-space-md rounded-xl bg-surface-container-low/60 text-center mb-space-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">health_and_safety</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Always consult your healthcare provider or pharmacist regarding dosing, interactions, and medication changes.
+      </p>
+</div>
+</div>
+<!-- Interactive Client-side Script for Filter Tabs and Search Demo -->
+<script>
+    (function() {
+      const tabs = document.querySelectorAll('.med-tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm');
+            t.classList.add('bg-surface', 'text-on-surface-variant', 'font-medium');
+          });
+          tab.classList.remove('bg-surface', 'text-on-surface-variant', 'font-medium');
+          tab.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm');
+        });
+      });
+
+      const searchInput = document.getElementById('medication-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase();
+          const articles = document.querySelectorAll('article');
+          articles.forEach(article => {
+            const text = article.textContent.toLowerCase();
+            article.style.display = text.includes(query) ? '' : 'none';
+          });
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

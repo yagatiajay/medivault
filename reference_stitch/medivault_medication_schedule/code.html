@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-variant":"#d3e4fe","on-surface-variant":"#3d4947","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","tertiary":"#545c72","on-secondary-container":"#00476e","background":"#f8f9ff","primary":"#00685f","surface-container-high":"#dce9ff","primary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eaf1ff","outline-variant":"#bcc9c6","error":"#ba1a1a","inverse-surface":"#213145","outline":"#6d7a77","tertiary-container":"#6c748b","on-primary":"#ffffff","on-tertiary-container":"#fefcff","surface-tint":"#006a61","surface-container-highest":"#d3e4fe","on-primary-fixed":"#00201d","on-secondary":"#ffffff","surface-bright":"#f8f9ff","inverse-primary":"#6bd8cb","tertiary-fixed":"#dae2fd","on-tertiary-fixed-variant":"#3f465c","surface-container-lowest":"#ffffff","primary-container":"#008378","primary-fixed":"#89f5e7","secondary-fixed-dim":"#93ccff","surface":"#f8f9ff","on-background":"#0b1c30","on-surface":"#0b1c30","on-primary-fixed-variant":"#005049","error-container":"#ffdad6","on-error":"#ffffff","on-secondary-fixed":"#001d31","secondary":"#006398","surface-container":"#e5eeff","on-tertiary-fixed":"#131b2e","secondary-fixed":"#cce5ff","on-secondary-fixed-variant":"#004b73","on-primary-container":"#f4fffc","tertiary-fixed-dim":"#bec6e0","secondary-container":"#5bb8fe","on-error-container":"#93000a"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem",margin:"1rem","margin-md":"2rem",gutter:"1rem","gutter-md":"1.5rem","space-sm":"0.5rem","space-xl":"2rem","space-xs":"0.25rem","margin-lg":"3rem","space-md":"1rem","gutter-lg":"2rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"500"}],"display-lg":["40px",{lineHeight:"48px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-lg-mobile":["32px",{lineHeight:"40px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"500"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg flex items-center gap-space-sm"><img alt="MediVault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XhBr1t0wrgYNJLGGvQ1HmpDDcZHzFaMJc7F9NThLqMcko3CaHPY2s_TMOLHVeWiODGs32ZVd4OcYeN2LFRDYYXmm6_HGQLbZlorfgkmLAPfXQ8xjrDeKjCjnD7IK8kIFhOappXLRJeA9sRlPAhe3fFaTZhJsOn2JKlHNo7Okfn8IuzzJdzpFKex1kaCcEZOhft-uCatdp4sQS_HkdHqnZyLt2y0pQT8Lh2YB6KruMdgA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MediVault</span><span class="font-label-sm text-label-sm text-on-surface-variant">Personal Health Organizer</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Health Overview</span></div><nav class="flex flex-col gap-space-xs px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="medications" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-md text-body-md">Medications</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="schedule" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-body-md text-body-md">Schedule</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prescriptions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Prescriptions</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reminders" href="#"><span class="material-symbols-outlined text-[20px]">alarm</span><span class="font-body-md text-body-md">Reminders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="family-profiles" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Family Profiles</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/><div class="flex flex-col truncate"><span class="font-label-lg text-label-lg text-on-surface truncate">Sarah Jenkins</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">sarah.j@example.com</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="text-on-surface-variant hover:text-primary transition-colors p-space-xs rounded" title="Quick Settings" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button><button class="text-on-surface-variant hover:text-error transition-colors p-space-xs rounded" title="Sign Out" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div><div class="px-space-xs py-space-xs text-center"><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight opacity-75">MediVault does not provide medical advice. Personal records organizer only.</p></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md max-w-md w-full"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search medications, doctors, logs..." type="search"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant shadow-sm border border-outline-variant/30">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-[18px] text-primary">account_circle</span><span class="font-label-sm text-label-sm text-on-surface-variant">Viewing records for:</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Jenkins (Me)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-sm"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Notifications" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container-low" title="Help and Documentation" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaHuOeMekPoRBJ_Lm-kRFbCkWbNaP689fvnvRJv_erGUCpVWe-DWL54X5XV3mFqcNi2Q8grBXAfd4jBHZKeeHMlWAqm6Ccxts3rYIDaPukXHrSMicsXTS5hrn_hG13cGpf8v_cBrB4JKpX4-o_IS-8r1qW8ROTFqC8rLHUZNK3NZrqVPCtMSaNcYF6YrRgrX52v5a2EPfNgsKGafQM7jyTBy3HK2Y2P8km-Ojc3vnV"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-7xl mx-auto w-full flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md mb-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>CHRONOLOGICAL REGIMEN</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Daily Schedule</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Track your personal daily dosage timing and adherence events.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex bg-surface-container-high p-1 rounded-xl shadow-inner">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm transition-all" type="button">Today</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-all" type="button">Week</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-all" type="button">Month</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Previous Day" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface px-space-xs">
+<span>Thursday, October 24, 2024</span>
+</div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Next Day" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-low text-primary font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" type="button">
+          Today
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Log Dose</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md px-space-md py-space-sm bg-surface-container-low rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Status Codes:</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Taken / Logged</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Upcoming Scheduled</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Skipped by User</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Missed / Past Due</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">wb_twilight</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Morning Routine</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded-full">07:00 AM – 11:00 AM</span>
+</div>
+<div class="relative pl-6 flex flex-col gap-space-md">
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="absolute -left-6 top-5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-primary-fixed"></span>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">pill</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Atorvastatin</span>
+<span class="font-label-md text-label-md text-on-surface-variant">20mg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 tablet • Oral administration</span>
+<div class="flex items-center gap-space-xs mt-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span>Logged with a full glass of water</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-xs pt-2 md:pt-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Scheduled: 08:00 AM</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Taken at 08:05 AM
+                </span>
+</div>
+</div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="absolute -left-6 top-5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-primary-fixed"></span>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">nutrition</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Vitamin D3</span>
+<span class="font-label-md text-label-md text-on-surface-variant">1,000 IU</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 softgel • Dietary supplement</span>
+<div class="flex items-center gap-space-xs mt-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+<span>Taken with breakfast</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-xs pt-2 md:pt-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Scheduled: 08:00 AM</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Taken at 08:05 AM
+                </span>
+</div>
+</div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="absolute -left-6 top-5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-secondary-fixed"></span>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">vital_signs</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Blood Pressure Check</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Reminder</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resting seated measurement • Arm cuff</span>
+<div class="flex items-center gap-space-xs mt-2 text-on-surface font-label-md text-label-md">
+<span class="font-semibold text-secondary">Logged Reading:</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">122 / 78 mmHg</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-xs pt-2 md:pt-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Scheduled: 09:30 AM</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+                  Logged at 09:34 AM
+                </span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">sunny</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Afternoon Routine</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded-full">12:00 PM – 05:00 PM</span>
+</div>
+<div class="relative pl-6 flex flex-col gap-space-md">
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<div class="relative flex flex-col gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="absolute -left-6 top-5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse ring-4 ring-secondary-fixed"></span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">medication_liquid</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Amoxicillin</span>
+<span class="font-label-md text-label-md text-on-surface-variant">500mg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 capsule • Day 5 of 10 course</span>
+<div class="flex items-center gap-space-xs mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+<span>Finish full course as advised. Take with plenty of liquid.</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Scheduled: 01:00 PM</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+                    Upcoming in 45 min
+                  </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                  Mark Taken
+                </button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+                  Skip
+                </button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">snooze</span>
+                  Snooze 15m
+                </button>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[20px]">nightlight</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Evening &amp; Night</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded-full">06:00 PM – 11:00 PM</span>
+</div>
+<div class="relative pl-6 flex flex-col gap-space-md">
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="absolute -left-6 top-5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-secondary-fixed"></span>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">pill</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Lisinopril</span>
+<span class="font-label-md text-label-md text-on-surface-variant">10mg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 tablet • Daily maintenance</span>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-xs pt-2 md:pt-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Scheduled: 08:00 PM</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  Scheduled for 08:00 PM
+                </span>
+</div>
+</div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="absolute -left-6 top-5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-outline-variant"></span>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-outline text-[24px]">bedtime</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Melatonin</span>
+<span class="font-label-md text-label-md text-on-surface-variant">3mg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optional / PRN • As needed for sleep support</span>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-space-xs pt-2 md:pt-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Window: 09:30 PM</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+                  As-needed (PRN)
+                </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg sticky top-20">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Today's Adherence</h3>
+<span class="font-label-lg text-label-lg text-primary font-bold">50% Complete</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary transition-all duration-1000" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="50, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">2/4</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">2 of 4 doses logged</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">2 upcoming scheduled items remaining today.</p>
+</div>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>Weekly Consistency</span>
+<span class="text-primary font-semibold">93% On-Time</span>
+</div>
+<div class="grid grid-cols-7 gap-1.5 h-16 items-end bg-surface-container-low p-2 rounded-xl">
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-primary rounded-t-sm" style="height: 90%;"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">M</span>
+</div>
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-primary rounded-t-sm" style="height: 100%;"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">T</span>
+</div>
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-primary rounded-t-sm" style="height: 85%;"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">W</span>
+</div>
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-primary-fixed-dim rounded-t-sm" style="height: 50%;"></div>
+<span class="font-label-sm text-[10px] text-primary font-bold">T</span>
+</div>
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-surface-container-high rounded-t-sm" style="height: 0%;"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">F</span>
+</div>
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-surface-container-high rounded-t-sm" style="height: 0%;"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">S</span>
+</div>
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full bg-surface-container-high rounded-t-sm" style="height: 0%;"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">S</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-primary">edit_note</span>
+<h3 class="font-headline-sm text-headline-sm">Daily Regimen Log Note</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Record symptoms, digestion notes, or dietary conditions for today.</p>
+<div class="relative">
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-all resize-none" placeholder="Add note for today's log... (e.g. taken with food, mild headache in morning)" rows="3"></textarea>
+</div>
+<button class="self-end px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-colors" type="button">
+            Save Entry
+          </button>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant shrink-0 mt-0.5">shield_with_heart</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
+            This schedule is a personal tracking aid, not a prescription directive. Always follow the explicit instructions provided by your licensed healthcare practitioner.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

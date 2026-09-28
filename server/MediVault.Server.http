@@ -1,0 +1,6 @@
+@MediVault.Server_HostAddress = http://localhost:5049
+
+GET {{MediVault.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
