@@ -1,0 +1,19 @@
+{
+  "name": "MediVault — Personal Medication & Prescription Organizer",
+  "short_name": "MediVault",
+  "description": "A calm, clutter-free medical record organizer for medications, prescriptions, and family care circles.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8f9ff",
+  "theme_color": "#00685f",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health", "lifestyle"]
+}

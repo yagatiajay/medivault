@@ -1,0 +1,106 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: medivault_postgres_prod
+    restart: always
+    environment:
+      POSTGRES_DB: medivault_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: medivault_secret_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_prod_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d medivault_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - medivault_prod_net
+
+  redis:
+    image: redis:7-alpine
+    container_name: medivault_redis_prod
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_prod_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - medivault_prod_net
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: medivault_rabbitmq_prod
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: medivault_admin
+      RABBITMQ_DEFAULT_PASS: medivault_rabbit_pass
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_prod_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+    networks:
+      - medivault_prod_net
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: medivault_server_prod
+    restart: always
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=medivault_db;Username=postgres;Password=medivault_secret_password"
+      ConnectionStrings__Redis: "redis:6379"
+      RabbitMQ__HostName: "rabbitmq"
+      RabbitMQ__Port: "5672"
+      RabbitMQ__UserName: "medivault_admin"
+      RabbitMQ__Password: "medivault_rabbit_pass"
+      RabbitMQ__QueueName: "medivault_reminders"
+      AllowedOrigins: "http://localhost:8080,http://localhost"
+    ports:
+      - "5049:5049"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - medivault_prod_net
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: medivault_client_prod
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
+    networks:
+      - medivault_prod_net
+
+networks:
+  medivault_prod_net:
+    driver: bridge
+
+volumes:
+  postgres_prod_data:
+  redis_prod_data:
+  rabbitmq_prod_data:
