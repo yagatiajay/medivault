@@ -79,6 +79,16 @@ npm run dev
 
 ---
 
+
+### 5. Production Containerized Deployment (1-Command Full Stack)
+Deploy all 5 services (Nginx SPA, .NET 8 Web API, PostgreSQL 16, Redis 7, and RabbitMQ 3) with production configurations, data volumes, and healthchecks:
+```bash
+docker compose -f docker-compose.prod.yml up --build -d
+```
+* **Production App**: `http://localhost:8080`
+* **Health Liveness Probe**: `http://localhost:5049/health`
+* **Health Readiness Probe**: `http://localhost:5049/health/ready`
+
 ## 📑 Feature Modules & Screens
 
 1. **Public Landing Page** (`/pages/LandingPage.jsx`): Hero value proposition, feature grid, and regulatory notices.
